@@ -1,0 +1,240 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-color: #4E3F77;
+    --light-color: #F8F5FF;
+    --acent-color: #F5F1FF;
+}
+
+body {
+    margin: 0;
+    color: var(--light-color);
+    width: 100%;
+}
+
+/* Header Section */
+.header {
+    background: var(--dark-color);
+    padding: 1% 0 1% 1%;
+}
+
+.header h1 {
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}
+
+/* End Of Header Section */
+
+
+
+/* Second section */
+.second-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #4e3f77;
+    padding: 2%;
+}
+
+.second-section:hover {
+    background-color: #f7f4ff;
+}
+
+#btnAdd {
+    width: 100px;
+    height: 35px;
+    border-radius: 4px;
+    border: none;
+    background: var(--acent-color);
+    color: #292D32;
+    border: 1px solid var(--dark-color);
+}
+
+#btnAdd:hover {
+    background: var(--dark-color);
+    border: none;
+    color: white;
+}
+
+.second-section input {
+    width: 100%;
+    color: rgb(43, 43, 43);
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    background-color: transparent;
+}
+
+.second-section input::placeholder {
+    color: #adadad;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* End Of Second Section */
+
+
+/* Third Section */
+.third-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2%;
+    gap: 2rem;
+    padding-bottom: 2%;
+    place-content: center;
+    justify-items: center;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.third-section h3 {
+    color: #292D32;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+
+
+.total,
+.completed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.select {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+#totalCount,
+#completedCount {
+    background-color: var(--dark-color);
+    height: 40px;
+    color: white;
+    width: 60px;
+    border-radius: 4px;
+    text-align: center;
+    place-content: center;
+    /* justify-items: center; */
+    /* place-items: center; */
+}
+
+#icon1 {
+    width: 24px;
+    height: 24px;
+}
+
+/* End Of Third Section */
+
+
+
+/* Section Four */
+.tsk-table {
+    font-size: 18px;
+    color: #292D32;
+    font-weight: 500;
+    width: 80%;
+    background: var(--acent-color);
+    box-shadow:
+        0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+        0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+    margin: 0 auto 5% auto;
+    padding: 2%;
+}
+
+.one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    padding: 0 0 2% 0;
+    /* background-color: brown; */
+}
+
+.tsk-sec{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    width: 80%;
+    align-items: center;
+    justify-items: center;
+    /* background-color: rgb(134, 134, 134 20%); */
+}
+
+.icon2 {
+    width: 16px;
+    height: 16px;
+
+}
+
+.one button {
+    width: 100px;
+    height: 35px;
+    border-radius: 4px;
+    border: none;
+    background: var(--dark-color);
+    color: white;
+} 
+
+
+/* .num-tsk{
+    display: flex;
+    background-color: bisque;
+    justify-content: space-between;
+
+}
+
+.tsk-sec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    gap: 1%;
+    background-color: aqua;
+    width: 100%;
+
+}
+
+#icon3 {
+    width: 16px;
+    height: 16px;
+
+}
+
+.one button {
+    width: 100px;
+    height: 35px;
+    border-radius: 4px;
+    border: none;
+    background: var(--dark-color);
+    color: white;
+} */
+
+
