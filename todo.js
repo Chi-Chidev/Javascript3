@@ -36,11 +36,11 @@ function updateTaskList() {
       '<img src="' + taskIcon + '" alt="An icon" class="icon2" data-position="' + i + '">' +
       '<p style="' + taskStyle + '">' + task.text + '</p>' +
       '</div>' +
-      '<button class="btnn1" data-index="' + i + '" style="' + buttonStyle + '">' + buttonText + '</button>' +
+      '<button class="btnn1" data-position ="' + i + '" style="' + buttonStyle + '">' + buttonText + '</button>' +
       '</div>';
     
     // Append new task HTML
-    taskTable.innerHTML += taskHtml;
+    taskTable.innerHTML = taskTable.innerHTML + taskHtml;
   }
 
   // Update total and completed count
@@ -76,10 +76,10 @@ document.getElementById('btnAdd').onclick = function () {
 };
 
 // Event delegation for task completion and deletion
-document.querySelector('.tsk-table').addEventListener('click', function (e) {
-  if (e.target.classList.contains('icon2')) {
+document.querySelector('.tsk-table').addEventListener('click', function (event) {
+  if (event.target.classList.contains('icon2')) {
     // Toggle task completion
-    let index = e.target.getAttribute('data-index');
+    let index = event.target.getAttribute('data-index');
     tasks[index].completed = !tasks[index].completed;
     updateTaskList();
   }
